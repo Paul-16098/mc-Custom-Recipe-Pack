@@ -1,0 +1,6 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"show_notification": false,
+	"ingredients": ["minecraft:furnace"],
+	"result": "sophisticatedbackpacks:smelting_upgrade"
+}
