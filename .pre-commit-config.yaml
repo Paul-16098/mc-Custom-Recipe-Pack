@@ -1,0 +1,11 @@
+repos:
+  - repo: local
+    hooks:
+      - id: make-doc
+        name: make doc
+        files: ^\.build\.features\.json|README\.md|\.build\.doc\.nu$
+        language: system
+        pass_filenames: false
+        entry: nu
+        args:
+          - .build.doc.nu
