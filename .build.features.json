@@ -3,7 +3,7 @@
 		"name": "Dev file",
 		"description": "This feature is used for development purposes.\nIt Not included in the final build.",
 		"default_enable": false,
-		"files": [".git/", ".build.*"]
+		"files": [".git/", ".build.*", ".pre-commit-config.yaml"]
 	},
 	"wool-to-string": {
 		"name": "Wool to String",
