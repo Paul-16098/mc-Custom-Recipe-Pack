@@ -1,0 +1,28 @@
+{
+	"dev-file": {
+		"name": "Dev file",
+		"description": "This feature is used for development purposes.\nIt Not included in the final build.",
+		"default_enable": false,
+		"files": [".git/", ".justcache/", "justfile", ".build.*"]
+	},
+	"wool-to-string": {
+		"name": "Wool to String",
+		"description": "Convert wool into string.",
+		"default_enable": true,
+		"files": ["data/custom-recipe/recipe/wool-to-string.json"]
+	},
+	"sophisticated-backpacks-upgrade": {
+		"name": "Sophisticated Backpacks Upgrade",
+		"default_enable": true,
+		"files": ["data/custom-recipe/recipe/*_upgrade.json"]
+	},
+	"raw-ores-processing": {
+		"name": "Raw Ores Processing",
+		"description": "新增了原礦塊的熔爐及高爐配方",
+		"default_enable": true,
+		"files": [
+			"data/custom-recipe/recipe/raw_*_block_blasting.json",
+			"data/custom-recipe/recipe/raw_*_block_smelting.json"
+		]
+	}
+}
