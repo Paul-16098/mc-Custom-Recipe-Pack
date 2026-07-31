@@ -56,7 +56,7 @@ export def main [
     }
 
   let enable_features = $build_features | where $it.enable
-  open ./pack.mcmeta | from json | update pack.description ('Custom Recipe Pack: ' + ($enable_features.name | str join ', ')) | to json --raw | save ./pack.mcmeta --force
+  open ./pack.mcmeta | from json | update pack.description.extra.0.extra ($enable_features | par-each --keep-order { $"- ($in.name): ($in.description)\n" }) | to json --raw | save ./pack.mcmeta --force
 
   print "enable features: " ($enable_features | p)
 
