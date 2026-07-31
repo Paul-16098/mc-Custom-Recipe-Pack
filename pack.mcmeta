@@ -1,9 +1,1 @@
-{
-	"pack": {
-		"description": "Custom Recipe Pack",
-		"pack_format": 107,
-		"supported_formats": [48, 107],
-		"min_format": 48,
-		"max_format": [107, 1]
-	}
-}
+{"pack":{"description":{"type":"text","text":"Custom Recipe Pack","extra":[{"type":"text","text":"\n","italic":true,"extra":["- Wool to String: Convert wool into string.\n","- Raw Ores Processing: 新增了原礦塊的熔爐及高爐配方\n"]}]},"pack_format":107,"supported_formats":[48,107],"min_format":48,"max_format":[107,1]}}
